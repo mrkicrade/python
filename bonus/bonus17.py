@@ -20,7 +20,7 @@ window = sg.Window('File Compressor',
 while True:
     event, values = window.read()
     print(event, values)
-    filepath = values['files'].split(';')
+    filepaths = values['files'].split(';')
     folder = values['folder']
     make_archive(filepaths, folder)
     window['output'].update(value='Compression completed!!!')
