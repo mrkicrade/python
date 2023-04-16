@@ -1,7 +1,3 @@
 html
-css
-JavaScript
-php
-python
-mysql
-C#
+klk+css
+javaScripdst
