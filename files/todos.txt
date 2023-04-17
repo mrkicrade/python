@@ -1,3 +1,5 @@
 html
-klk+css
-javaScripdst
+css
+javaScript
+php
+python
