@@ -1,7 +1,7 @@
 import streamlit as st
 import functions
 
-# isntaliraj streamlit
+
 # aplikaciju pokreni iz terminala komandom streamlit run web.py
 
 
@@ -24,9 +24,9 @@ for index, todo in enumerate(todos):
         todos.pop(index)
         functions.write_todos(todos)
         del st.session_state[todo]
-        st.rerun()
-        # st.experimental_rerun() # probaj jednu od ove dve funkcije
+        # st.rerun()
+        st.experimental_rerun() # probaj jednu od ove dve funkcije
 
 st.text_input(label='', placeholder='Add new todo...', on_change=add_todo, key='new_todo')
 
-st.session_state
+# st.session_state
